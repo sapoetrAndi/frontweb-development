@@ -1,0 +1,51 @@
+1. gambar & video
+- unsplash.com
+- pexels.com
+- pixabay.com
+
+2. ilustration
+- unDraw
+- usesmash.com
+- freepik.com
+
+3. fonts & icons
+- google fonts
+- flaticon
+- font awesome
+
+4. design & mockup
+- figma
+- wireframe.cc
+- mockupPhone
+
+5. collor scheme generator
+- coolors
+- colorhunt
+- adobe color
+
+6. image utility (manipualsi gambar)
+- squoosh.app
+- remove.bg
+
+7. online coding (snippets)
+- codepen.io
+- jsfiddle.net
+- replit.com
+- pastebin.com
+
+8. online documentation (cheatsheet)
+- devdocs.io
+- devhints.io
+- caniuse.com
+
+9. web design inspiration
+- dribbble.com
+- awwwards.com
+- siteinspire.com
+
+10. chrome extensions
+- web developer tools
+- jsonView
+- wappalyzer
+- awesome screenshoot & screen recorder
+- whatFont

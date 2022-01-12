@@ -1,0 +1,68 @@
+"Sebuah pendekatan yang menyarankan agar proses perancangan dan pembangunan sebuah web app harus merespon terhadap perilaku pengguna berdasarkan dari ukuran layar, platform, dan orientasi layar."
+
+Responsive Web Design
+
+10 Prinsip Responsive Web Design
+
+1. Adaptive vs Responsive Design
+2. Viewport & Viewport Meta Tag
+    "Viewport adalah = Area pada halaman web yang terlihat oleh user"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    tag agar web menjadi responsive
+
+
+3. Breakpoints
+    * Responsive Breakpoints
+    - Extra Small Device / potrait phone : <576px
+    - Small Device / landscape phone : >=576px
+    - Medium Device / tablets : >=768px
+    - Large Device / laptop, dekstop : >=992px
+    - Extra Large Device / large dekstop, wide screen : >=1200px
+    - XX-Large Device / potrait phone : >=1400px
+
+
+4. Media Query
+    - @media (min-width: 576px) {}
+    - @media (min-width: 768px) {}
+    - @media (min-width: 992px) {}
+    - @media (min-width: 1200px) {}
+    - @media (min-width: 1400px) {}
+
+
+5. Fluid Layouts
+    fluid artinya kita mengatur tampilan dengan satuan relative (%)
+    - .content{width: 90%;}
+    - .left{width: 50%;}
+    - .middle, .right{width: 20%;}
+
+    sedangkan fixed Layouts
+    - .content{width: 90px;}
+    - .left{width: 50px;}
+    - .middle, .right{width: 20px;}
+
+    
+6. Relative Units
+    - %
+    - rem & em
+    - vw & vh
+    - vmin & vmax
+
+
+7. Responsive Media seperti image & video
+    sama seperti fluid layouts artinya kita mengatur gambar/video dengan satuan relative (%)
+
+
+8. Flexbox
+    mengatur elemen di baris atau kolom yang sama
+
+
+9. Grid
+    mengatur elemen ga peduli elemen ada di baris atau kolom yang berbeda
+
+
+10. mobile first design
+    membuat design tampilan dari mobile terlebih dahulu kemudian ke device yang lebih besar
+    Kenapa?
+    - pengguna mobile jauh lebih banyak
+    - ragam mobile device lebih banyak
+    - 'content first'/hierarki informasi

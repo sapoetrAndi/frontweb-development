@@ -1,0 +1,14 @@
+css value adalah nilai dari sebuah properti. contohnya: 80px, none, inline, absolute, dll.
+sedangkan css unit adalah satuan dari sebuah css value. contohnya px, %, em, rem, dll.
+
+jenis satuan
+- dimension
+    number yang memiliki satuan dibelakangnya. contohnya: 80px, 80em, 80deg, dll.
+        -Resolution untuk menentukan resolusi dari tampilan web kita, biasanya digunakan untuk mencetak sesuatu ke printer.
+            - dpi (dot per inch)
+            - dpcm (dot per centimeter)
+            - dppx (dot per pixel)
+            contoh penggunaan:
+            @media print and (min-resolution : 300dpi){
+                
+            }
