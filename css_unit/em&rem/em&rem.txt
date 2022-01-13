@@ -1,0 +1,20 @@
+em vs rem
+
+em adalah satuan untuk mengatur ukuran dari font, margin, padding yang berada disekitar elemen.
+contohnya:
+.col-em h2{
+    /* 2em artinya 2 kali ukuran font elemen parentnya. jika elemen parent tidak diset ukuran fontnya maka dia akan cek ke elemen parent paling teratas, jika tidak ada juga maka akan ada nilai default yang di beri oleh browser. ukuran defaultnya adalah 16px jadi 2em * 16 = 32px */
+
+
+    font-size: 2em;
+}
+
+note: 
+- perilaku dari em adalah cascading (menumpuk). maka cara mengatasinya bisa memakai rem agar mengambil nilai root.
+- jika kita menggunakan em pada margin, padding, width, atau height maka yang akan di cek adalah font-size elemennya terlebih dahulu jika tidak ada baru cek ke parentnya
+
+
+sedangkan, rem adalah singkatan dari root em.
+rem akan mengambil ukuran font-size pada root yaitu tag html, jika tidak di set juga maka akan ada nilai default yang di beri oleh browser. ukuran defaultnya adalah 16px jadi 2em * 16 = 32px
+
+tips: gunakan rem untuk font sedangkan em digunakan untuk margin, padding, width, atau height
