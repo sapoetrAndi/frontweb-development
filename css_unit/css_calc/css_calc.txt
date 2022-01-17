@@ -1,0 +1,23 @@
+CSS calc()
+
+sebuah fungsi pada css , yang memungkinkan kita untuk melakukan operasi matematika / kalkulasi pada nilai dari sebuah properti
+
+ nilai yang bisa di kelola diantaranya:
+ - <length>
+ - <angle>
+ - <time>
+ - <percentage>
+ - <number>
+
+ cara menulisnya:
+ * penjumlahan
+ width: calc(10px + 100px)
+ * pengurangan
+ width: calc(100% - 30px)
+ * perkalian & pembagian
+ margin: calc(10px * 3) -> valid karena dikali number/int
+ margin: calc(10px * 3px) -> invalid karena dikali dengan nilai yang memiliki satuan
+
+ * calc bersarang
+ width: calc(calc(100% / 3) - calc(1rem * 2));
+ width: calc((100% / 3) - (1rem * 2));
