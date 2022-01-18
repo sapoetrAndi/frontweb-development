@@ -1,0 +1,32 @@
+Flex box
+"Model layout 1 dimensi yang dapat mengatur jarak dan penjajaran antar item dalam sebuah container".
+
+1 dimensi?
+"hanya dapat mengatur secara horizontal ataupun vertikal / antara baris atau kolom".
+
+* istilah - istilah pada flex box
+- container : wadahnya/pembungkus/parent
+- items: element didalamnya/childs
+
+- main axis: sumbu utama dari container yang menentukan urutan dari penempatan items secara horizontal. contohnya: jika main axisnya Horizontal maka cross axisnya vertikal begitupun sebaliknya
+- cross axis: 
+
+- main size: ukuran (width/height) dari container yang akan membuat dimensi dari items nya relatif terhadap main size
+- cross size: ukuran dari kolom
+
+- main start - main end: untuk menentukan awal dari elemen secara horizontal
+- cross start - cross end: untuk menentukan awal dari elemen secara vertikal
+
+* properti pada container
+- display: flex;
+- display: inline-flex;
+- flex-direction: row | row-reverse | column | column-reverse;
+- flex-wrap: nowrap | wrap | wrap-reverse;
+- justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+- align-items: flex-start | flex-end | center | stretch | baseline;
+- align-content: flex-start | flex-end | center | space-between | space-around;
+
+* properti pada items
+- order: 1; // untuk mengatur urutan item
+- flex-grow: 1; // untuk mengatur ukuran item
+- align-self: auto | flex-start | flex-end | center | stretch | baseline; // khusu untuk mengatur sebuah element
