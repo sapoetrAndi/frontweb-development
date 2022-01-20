@@ -1,0 +1,29 @@
+* Apa itu CSS grid?
+    Modul CSS baru untuk mendefinisikan sistem layout berbentuk grid dalam 2 dimensi (baris & kolom). untuk menjalankannya kita perlu memberi properti display: grid;.
+* kenapa kita memakai CSS grid?
+    CSS grid untuk membuat layout yang lebih kompleks. jadi CSS Grid dapat di combine dengan flexbox.
+
+// untuk mengatur/menamai bagian bagian dari elemen
+.container{
+grid-template-areas:    "header header"
+                        "aside main"
+                        "nav main"
+                        "footer footer";
+}
+
+// untuk mengatur ukuran dari masing masing kolomnya
+.container{
+grid-template-columns:  1fr 1.5fr;
+}
+
+// untuk mengatur ukuran dari masing masing barisnya
+.container{
+grid-template-rows:  1fr 1.5fr ;
+}
+
+// untuk memberitahu elemen child nama dari areanya
+header{
+    grid-area: header;
+    background-color: #B063DB;
+    padding: 40px 0;
+}
