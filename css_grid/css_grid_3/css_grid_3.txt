@@ -1,0 +1,47 @@
+CSS GRID| #3 Columns & Rows
+
+CSS GRID PROPERTY
+
+* property pada container
+    - grid-template-columns
+    - grid-template-rows
+    - grid-auto-columns
+    - grid-auto-rows
+    - grid-auto-flow
+    - grid-template-areas
+    - grid-template
+    - grid-column-gap
+    - grid-row-gap
+    - grid-gap
+    - grid
+    - justify-items
+    - align-items
+    - place-items
+    - justify-content
+    - align-content
+    - place-content
+
+* property pada items
+    - grid-column-start
+    - grid-column-end
+    - grid-row-start
+    - grid-row-end
+    - grid-column
+    - grid-row
+    - grid-area
+    - justify-self
+    - align-self
+    - place-self
+
+
+berikut adalah properti untuk mengatur kolom dan baris:
+
+- grid-template-columns & grid-template-rows
+dua properti diatas digunakan untuk mendefinisikan kolom / baris dengan cara menuliskan nilai dipisahkan oleh spasi. nilai merepresentaiskan ukuran grid track dan spasi merepresentaiskan grid line.
+cara menulisnya:
+
+.container{
+    display: grid;
+    grid-template-columns: 25% auto 50px ;
+    grid-template-rows: 50px 100px auto;
+}
