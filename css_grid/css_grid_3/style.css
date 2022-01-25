@@ -9,7 +9,7 @@ html, body{
     margin: 50px auto;
     display: grid;
     grid-template-columns: 100px 25% 200px;
-    grid-template-rows: ;
+    grid-template-rows: 100;
 }
 
 .item{
