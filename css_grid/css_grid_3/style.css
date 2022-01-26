@@ -9,7 +9,8 @@ html, body{
     margin: 50px auto;
     display: grid;
     grid-template-columns: 100px 25% 200px;
-    grid-template-rows: 100;
+    grid-template-rows: 100px;
+    
 }
 
 .item{
@@ -22,4 +23,6 @@ html, body{
 .item:nth-child(even){
     background-color: rgb(255, 142, 142);
 }
+
+
 
