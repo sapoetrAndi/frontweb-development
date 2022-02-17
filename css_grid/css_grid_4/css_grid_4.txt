@@ -1,0 +1,20 @@
+CSS GRID | #4 Special Keywords & Functions
+
+# repeat()
+    untuk menentukan ukuran grid track secara berulang. 
+    cara penulisan:
+    grid-template-columns: repeat(4, 1fr) repeat(5, 1.5fr);
+# min-content & max-content
+    untuk menentukan seberapa besar ukuran grid track berdasarkan content pada sebuah item. 
+    cara penulisan: 
+    grid-template-columns: 1fr min-content 1fr;
+# minmax()
+    untuk menentukan ukuran minimal dan maksimal dari grid track
+    cara penulisan: 
+    grid-template-columns: minmax(200px, 300px);
+# auto-fill & auto-fit
+    untuk menentukan jumlah item untuk berada pada grid track. digunakan didalam nilai (argumen) repeat.
+    auto-fill: item akan otomatis mengisi ketika ada ruang yang cukup
+    auto-fit: sama seperti auto-fill tapi akan terlihat ketika itemnya jumlahnya dikit
+    cara penulisan : 
+    grid-template-columns: repeat(auto-fill, 100px);
