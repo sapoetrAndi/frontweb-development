@@ -1,0 +1,19 @@
+CSS GRID | #5 Grid Area & Grid Gap
+
+* grid-template-areas
+    untuk mendefinisikan grid template menggunakan nama dari area yang ditulis pada property grid-area pada item. bisa digunakan di container / items.
+    contoh penulisan:
+    grid-template-areas:
+          'header header header'
+          'sidebar sidebar sidebar'
+          'content content content'
+          'footer footer footer';
+
+* grid-template
+    shorthand untuk mendefinisikan grid-template-rows, grid-template-columns, dan grid-template-areas dalam satu deklarasi. note: tulis row terlebih dahulu kemudain baris.
+    contoh penulisan:
+
+* grid-gap
+* column-gap
+* row-gap
+    untuk mendefinisikan ukuran grid-line / jarak antara baris atau kolom
