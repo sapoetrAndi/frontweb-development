@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radial Gradient</title>
+</head>
+
+<style>
+  /* liniear gradient adalah value dari backgorund-image */
+  /* background: radial-gradient(
+    <tipe> <jangkauan> at <posisi-y> <posisi-x>,
+    <warna-1>,
+    <warna-2>,
+    ...,
+    <warna-n>,); 
+  */
+  div{
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    
+    /* background: radial-gradient(red 60%, green 30px); */
+
+    /* background: radial-gradient(elipse/circle, red 60%, green 30px); */
+
+    /* background: radial-gradient(elipse/circle, red 60%, green 30px); */
+
+    /* jangkauan
+        defaultnya pusat lingkaran ada ditengah
+        - closest-corner (sudut terdekat dari pusat lingkaran)
+        - closest-side (sisi terdekat dari pusat lingkaran)
+        - farthest-corner (sudut terjauh dari pusat lingkaran)
+        - farthest-side (sisi terjauh dari pusat lingkaran)
+    */
+    /* background: radial-gradient(circle, closest-side, red 60%, green 30px); */
+    
+    /* posisi
+    memindahkan pusat gradient
+    posisi-y: top, center, bottom, px
+    posisi-x: left, center, right, px
+    */
+    /* background: radial-gradient(circle, farthest-side at top left, red 60%, green 30px); */
+
+    background-image: radial-gradient(red, #f0d606, rgba(255, 255, 0, 1) ,green);
+  }
+</style>
+<body>
+  <div></div>
+</body>
+</html>
