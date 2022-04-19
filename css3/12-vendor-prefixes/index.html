@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Vendor Prefixes</title>
+</head>
+
+<style>
+  @font-face {
+    font-family: 'open_sansregular';
+    src: url('OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  h1{
+    /* font-size: 100px; */
+    text-align: center;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: "open_sansregular", arial;
+  }
+
+  body{
+    text-align: center;
+  }
+  img{
+    width: 250px;
+    height: 200px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+</style>
+<body>
+  <h1>Vendor Prefixes</h1>
+  <p>Teknik di css3 yang digunakan agar sintaks css3 yang di buat Compatible di semua browser. vendor prefix adalah sintaks khusus yang harus ditambahkan untuk beberapa property css3. sintaks spesifik bisa berbeda di tiap tiap browser/vendor. kita harus menambahkan prefix karena tidak semua browser support css3</p>
+
+  <img src="bob.jpg" alt="Bob">
+
+  <!-- vendor prefixes -->
+  <!-- 
+    -webkit-<properti-css3> (chrome, safari, opera versi terbaru)
+    -moz-<properti-css3> (firefox)
+    -ms-<properti-css3> (internet explorer)
+    -o-<properti-css3> (opera versi terdahulu)
+
+
+
+
+    property css3 apa saja yang butuh vendor prefixes?
+    bisa di lihat di website dibawah ini:
+    - shouldiprefix.com
+    - caniuse.com
+   -->
+</body>
+</html>
