@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform</title>
+
+  <style>
+    /* 
+    Cara menuliskan propertinya
+    transform: <fungsi>;
+
+    fungsi transformasi
+    - scale -> memperbesar / memperkecil
+    - rotate -> memutar
+    - skew -> membuat condong / miring
+    - translate -> mengubah posisi
+    */
+
+    body{
+      text-align: center;
+    }
+    p{
+      font-size: 20px;
+      /* text-align: center; */
+    }
+
+    /* 
+      scale(angka), scaleX(angka), scaleY(angka)
+      rotate(deg), rotateX(deg), rotateY(deg)
+      skew(deg), skewX(deg), skewY(deg)
+      translate(px), translateX(px), translateY(px)
+    */
+    .kotak{
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      margin: 50px auto 0;
+      transition: 1s;
+    }
+    
+    .kotak:hover{
+      /* transform: scale(1.5, 2); */
+      /* atau */
+      /* transform: scaleX(1.5) scaleY(2);  */
+
+      /* jika kita hanya menggunakan rotate sumbu berada di tengah */
+      /* transform: rotate(45deg); */
+      /* sedangkan, jika kita menggunakan rotateX maka sumbu berada di posisi horizontal */
+      /* transform: rotateX(150deg);  */
+      /* sedangkan, jika kita menggunakan rotateY maka sumbu berada di posisi vertikal */
+      /* transform: rotateY(150deg);  */
+      /* kita bisa menggabungkan fungsi rotate */
+      /* transform: rotate(45deg) rotateX(150deg) rotateY(150deg);  */
+
+
+      /* transform: skew(30deg); */
+      /* transform: skewX(30deg); */
+      /* transform: skewY(-30deg); */
+
+      /* dengan menggunakan translate kita tidak akan mempengaruhi elemen disekitarnya. menggunakan translate performancenya jauh lebih baik dari pada menggunakan position */
+      /* transform: translate(50px, 100px); */
+      transform: translateX(50px) translateY(100px) scale(1.5) rotate(360deg);
+
+    }
+  </style>
+</head>
+<body>
+  <h1>Transform</h1>
+  <p>properti CSS3 yang memungkinkan kita dapat memanipulasi format visual dari element HTML seperti ukurannya, bentuk, ataupun posisinya</p>
+  <!-- ada dua jenis transform 2D & 3D. khusus materi saat ini kita akan membahas yang 2D-->
+
+  <!-- 
+    Cara menuliskan propertinya
+    transform: <fungsi>;
+
+    fungsi transformasi
+    - scale -> memperbesar / memperkecil
+    - rotate -> memutar
+    - skew -> membuat condong / miring
+    - translate -> mengubah posisi
+   -->
+   <div class="kotak"></div>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nisi modi blanditiis quae, hic eum eligendi nulla eius cum ex itaque qui optio minima neque? At molestiae sed eveniet porro.</p>
+
+
+</body>
+</html>

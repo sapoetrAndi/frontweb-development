@@ -5,9 +5,68 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Filter</title>
+
+  <style>
+    body{
+      text-align: center;
+    }
+
+  /*
+    cara menuliskan
+    filter: <tipe-filter>;
+
+    tipe filter
+    - blur(angka|%)
+    - brightness(angka|%)
+    - contrast(angka|%)
+    - saturate(angka|%)
+    - grayscale(angka|%)
+    - sepia(angka|%)
+    - hue-rotate(deg)
+    - invert(angka|%)
+    - opacity(angka|%)
+    - drop-shadow (sama seperti box-shadow)
+  */
+
+
+    img{
+      width: 55%;
+      height: 600px;
+      /* filter: blur(10px); */
+      /* filter: brightness(200%); */
+      /* filter: contrast(150%); */
+      /* filter: saturate(20%); */
+      /* filter: grayscale(0%); kebalikan dari saturate */
+      /* filter: sepia(100%); */
+      /* filter: hue-rotate(100deg); */
+      /* filter: invert(80%); */
+      /* filter: opacity(.2); */
+      filter: drop-shadow(5px 5px 5px black);
+    }
+
+    h1, img{
+      filter: drop-shadow(5px 5px 5px black) blur(5px) grayscale(100%) ;
+      transition: 1s;
+    }
+
+    img:hover{
+      filter: drop-shadow(5px 5px 5px black) blur(0) grayscale(0%) ;
+    }
+  </style>
 </head>
 <body>
+  <h1>Web Programming Unpas</h1>
   <p>properti css3 yang digunakan untuk memberikan efek visual pada gambar, backgorund, atau border</p>
+  
+
+  <img src="bob.jpg" alt="Bob">
+
       
+  <!-- 
+    kunjungi web ini untuk bereksperimen dengan css
+    
+    css filter effect
+    http://html5-demos.appspot.com/static/css/filters/index.html 
+  -->
 </body>
 </html>
