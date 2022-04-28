@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition part 1</title>
+
+  <style>
+    body{
+      text-align: center;
+    }
+
+    /* 
+      cara penulisan:
+      transition: [property(optional)] <durasi(wajib)> [fungsi(optional)] [delay(optional)];
+    */
+
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 900px;
+      margin: 10px auto;
+      border: 5px solid black;
+    }
+
+    .kotak{
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      /* default value pada transition adalah all -> transition: all 1s; */
+      transition: margin-left 1s;
+    }
+
+    .container:hover .kotak{
+      transform: rotate(180deg);
+      margin-left: 800px;
+      background-color: royalblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Transition part 1</h1>
+  <p>properti transition memungkinkan kita dapat mengubah nilai dari property HTML secara halus</p>
+  <!-- transisi hanya ada 1 pergerakan yaitu keadaan awal dan keadaan akhir sedangkan animasi lebih dari satu keadaan. note: selalu simpan properti transisi di keadaan awal -->
+
+  <div class="container">
+    <div class="kotak"></div>
+  </div>
+  
+</body>
+</html>

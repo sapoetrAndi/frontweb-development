@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition part 2</title>
+
+  <style>
+    body{
+      text-align: center;
+    }
+
+    /* 
+      cara penulisan:
+      transition: [property(optional)] <durasi(wajib)> [fungsi(optional)] [delay(optional)];
+    */
+
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 900px;
+      margin: 10px auto;
+      border: 5px solid black;
+    }
+
+    .kotak{
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px 0;
+      /* default value pada transition adalah all -> transition: all 1s; */
+    }
+
+    .kotak1{
+      transition: all 1s ease 2s;
+    }
+    .kotak2{
+      transition: margin-left 3s, transform 3s 2s, background-color 500ms 3s;
+    }
+    .kotak3{
+      transition: all 1s ease-out;
+    }
+    .kotak4{
+      transition: all 1s ease-in-out;
+    }
+    .kotak5{
+      transition: all 1s linear;
+    }
+    .kotak6 {
+      transition: all 1s cubic-bezier(0.24, -0.35 , 0.78, 1.46);
+    }
+
+    .container:hover .kotak{
+      transform: rotate(720deg);
+      margin-left: 800px;
+      background-color: royalblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Transition part 2</h1>
+  <p>properti transition memungkinkan kita dapat mengubah nilai dari property HTML secara halus</p>
+  <!-- transisi hanya ada 1 pergerakan yaitu keadaan awal dan keadaan akhir sedangkan animasi lebih dari satu keadaan. note: selalu simpan properti transisi di keadaan awal -->
+
+
+  <!-- 
+    timing function/ fungsi transisi
+   -->
+  <div class="container">
+    <div class="kotak kotak1">ease</div>
+    <div class="kotak kotak2">ease-in</div>
+    <div class="kotak kotak3">ease-out</div>
+    <div class="kotak kotak4">ease-in-out</div>
+    <div class="kotak kotak5">linear</div>
+    <div class="kotak kotak6">cubic-bezier</div>
+  </div>
+  
+</body>
+</html>
