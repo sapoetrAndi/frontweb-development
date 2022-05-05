@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Element</title>
+
+  <style>
+    div.kosong{
+      width: 100px;
+      height: 100px;
+      background: lightblue;
+      position: relative;
+      margin: 20px auto;
+    }
+
+    div.kosong::before,
+    div.kosong::after {
+      content: "";
+      width: 30px;
+      height: 30px;
+      position: absolute;
+    }
+
+    div.kosong::before{
+      top: -15px;
+      left: -15px;
+      background-color: salmon;
+    }
+
+    div.kosong::after{
+      right: -15px;
+      bottom: -15px;
+      background-color: lightgreen;
+    }
+
+
+    div.hello{
+      width: 100px;
+      height: 100px;
+      background: lightblue;
+      font-size: 12px;
+    }
+
+    div.hello::before{
+      content: "Hi, ";
+    }
+
+    div.hello::after{
+      content: " World";
+    }
+  </style>
+</head>
+<body>
+  <div class="hello">Hello</div>
+  <div class="kosong"></div>
+</body>
+</html>
