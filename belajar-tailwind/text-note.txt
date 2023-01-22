@@ -1,0 +1,7 @@
+@tailwind base; // untuk mereset semua style yang ada di browser/file html
+@tailwind components; // meminta component tailwind
+@tailwind utilities; // memanggil directive utilities / class class utility yang dimiliki tailwind
+
+
+//untuk memperkecil ukuran file / minify ketika selesai dev/deployed
+npx tailwindcss -o ./public/css/final.css --minify
